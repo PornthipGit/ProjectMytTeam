@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             tbStyle = new TextBox();
             panel3 = new Panel();
@@ -38,12 +38,13 @@
             btClose = new PictureBox();
             panel2 = new Panel();
             panel7 = new Panel();
+            pnDatabase = new Panel();
+            btAllStyle = new Bunifu.Framework.UI.BunifuFlatButton();
+            btNewStyle = new Bunifu.Framework.UI.BunifuFlatButton();
+            btSimStyle = new Bunifu.Framework.UI.BunifuFlatButton();
+            btactivity = new Bunifu.Framework.UI.BunifuFlatButton();
             btDatabase = new Guna.UI2.WinForms.Guna2GradientButton();
             cbbSimLo = new ComboBox();
-            btactivity = new Bunifu.Framework.UI.BunifuFlatButton();
-            btSimStyle = new Bunifu.Framework.UI.BunifuFlatButton();
-            btNewStyle = new Bunifu.Framework.UI.BunifuFlatButton();
-            btAllStyle = new Bunifu.Framework.UI.BunifuFlatButton();
             panel6 = new Panel();
             picLogo = new PictureBox();
             lbName2 = new Label();
@@ -55,13 +56,13 @@
             tabPage2 = new TabPage();
             pnGenerator = new Panel();
             panel22 = new Panel();
-            pnDatabase = new Panel();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btminimize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btClose).BeginInit();
             panel2.SuspendLayout();
             panel7.SuspendLayout();
+            pnDatabase.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             pnCenter.SuspendLayout();
@@ -70,7 +71,6 @@
             tabform.SuspendLayout();
             tabPage2.SuspendLayout();
             pnGenerator.SuspendLayout();
-            pnDatabase.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -146,154 +146,17 @@
             panel7.Size = new Size(218, 568);
             panel7.TabIndex = 20;
             // 
-            // btDatabase
+            // pnDatabase
             // 
-            btDatabase.Animated = true;
-            btDatabase.BorderRadius = 8;
-            btDatabase.CustomizableEdges = customizableEdges1;
-            btDatabase.DisabledState.BorderColor = Color.DarkGray;
-            btDatabase.DisabledState.CustomBorderColor = Color.DarkGray;
-            btDatabase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btDatabase.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            btDatabase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btDatabase.Dock = DockStyle.Top;
-            btDatabase.FillColor = Color.FromArgb(224, 224, 224);
-            btDatabase.FillColor2 = Color.FromArgb(224, 224, 224);
-            btDatabase.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btDatabase.ForeColor = Color.DimGray;
-            btDatabase.Image = (Image)resources.GetObject("btDatabase.Image");
-            btDatabase.ImageAlign = HorizontalAlignment.Left;
-            btDatabase.ImageSize = new Size(25, 25);
-            btDatabase.Location = new Point(0, 0);
-            btDatabase.Name = "btDatabase";
-            btDatabase.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btDatabase.Size = new Size(218, 40);
-            btDatabase.TabIndex = 9;
-            btDatabase.Text = "DATABASE";
-            btDatabase.Click += btDatabase_Click;
-            // 
-            // cbbSimLo
-            // 
-            cbbSimLo.Dock = DockStyle.Bottom;
-            cbbSimLo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            cbbSimLo.FormattingEnabled = true;
-            cbbSimLo.Items.AddRange(new object[] { "STB", "STS", "TKM-S-" });
-            cbbSimLo.Location = new Point(0, 539);
-            cbbSimLo.Name = "cbbSimLo";
-            cbbSimLo.Size = new Size(218, 29);
-            cbbSimLo.TabIndex = 8;
-            cbbSimLo.SelectedIndexChanged += cbbSimLo_SelectedIndexChanged;
-            // 
-            // btactivity
-            // 
-            btactivity.Active = false;
-            btactivity.Activecolor = Color.NavajoWhite;
-            btactivity.BackColor = Color.White;
-            btactivity.BackgroundImageLayout = ImageLayout.Stretch;
-            btactivity.BorderRadius = 0;
-            btactivity.ButtonText = "Activity Log";
-            btactivity.DisabledColor = Color.Gray;
-            btactivity.Dock = DockStyle.Top;
-            btactivity.Iconcolor = Color.Transparent;
-            btactivity.Iconimage = (Image)resources.GetObject("btactivity.Iconimage");
-            btactivity.Iconimage_right = null;
-            btactivity.Iconimage_right_Selected = null;
-            btactivity.Iconimage_Selected = null;
-            btactivity.IconMarginLeft = 0;
-            btactivity.IconMarginRight = 0;
-            btactivity.IconRightVisible = true;
-            btactivity.IconRightZoom = 0D;
-            btactivity.IconVisible = true;
-            btactivity.IconZoom = 40D;
-            btactivity.IsTab = true;
-            btactivity.Location = new Point(0, 0);
-            btactivity.Margin = new Padding(4, 3, 4, 3);
-            btactivity.Name = "btactivity";
-            btactivity.Normalcolor = Color.White;
-            btactivity.OnHovercolor = Color.NavajoWhite;
-            btactivity.OnHoverTextColor = Color.White;
-            btactivity.selected = false;
-            btactivity.Size = new Size(218, 30);
-            btactivity.TabIndex = 3;
-            btactivity.Text = "Activity Log";
-            btactivity.TextAlign = ContentAlignment.MiddleLeft;
-            btactivity.Textcolor = Color.Gray;
-            btactivity.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btactivity.Click += btactivity_Click;
-            // 
-            // btSimStyle
-            // 
-            btSimStyle.Active = false;
-            btSimStyle.Activecolor = Color.NavajoWhite;
-            btSimStyle.BackColor = Color.White;
-            btSimStyle.BackgroundImageLayout = ImageLayout.Stretch;
-            btSimStyle.BorderRadius = 0;
-            btSimStyle.ButtonText = "Similarity Style";
-            btSimStyle.DisabledColor = Color.Gray;
-            btSimStyle.Dock = DockStyle.Top;
-            btSimStyle.Iconcolor = Color.Transparent;
-            btSimStyle.Iconimage = (Image)resources.GetObject("btSimStyle.Iconimage");
-            btSimStyle.Iconimage_right = null;
-            btSimStyle.Iconimage_right_Selected = null;
-            btSimStyle.Iconimage_Selected = null;
-            btSimStyle.IconMarginLeft = 0;
-            btSimStyle.IconMarginRight = 0;
-            btSimStyle.IconRightVisible = true;
-            btSimStyle.IconRightZoom = 0D;
-            btSimStyle.IconVisible = true;
-            btSimStyle.IconZoom = 40D;
-            btSimStyle.IsTab = true;
-            btSimStyle.Location = new Point(0, 30);
-            btSimStyle.Margin = new Padding(4, 3, 4, 3);
-            btSimStyle.Name = "btSimStyle";
-            btSimStyle.Normalcolor = Color.White;
-            btSimStyle.OnHovercolor = Color.NavajoWhite;
-            btSimStyle.OnHoverTextColor = Color.White;
-            btSimStyle.selected = false;
-            btSimStyle.Size = new Size(218, 30);
-            btSimStyle.TabIndex = 2;
-            btSimStyle.Text = "Similarity Style";
-            btSimStyle.TextAlign = ContentAlignment.MiddleLeft;
-            btSimStyle.Textcolor = Color.Gray;
-            btSimStyle.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btSimStyle.Click += btSimStyle_Click;
-            // 
-            // btNewStyle
-            // 
-            btNewStyle.Active = false;
-            btNewStyle.Activecolor = Color.NavajoWhite;
-            btNewStyle.BackColor = Color.White;
-            btNewStyle.BackgroundImageLayout = ImageLayout.Stretch;
-            btNewStyle.BorderRadius = 0;
-            btNewStyle.ButtonText = "Manage Style";
-            btNewStyle.DisabledColor = Color.Gray;
-            btNewStyle.Dock = DockStyle.Top;
-            btNewStyle.Iconcolor = Color.Transparent;
-            btNewStyle.Iconimage = (Image)resources.GetObject("btNewStyle.Iconimage");
-            btNewStyle.Iconimage_right = null;
-            btNewStyle.Iconimage_right_Selected = null;
-            btNewStyle.Iconimage_Selected = null;
-            btNewStyle.IconMarginLeft = 0;
-            btNewStyle.IconMarginRight = 0;
-            btNewStyle.IconRightVisible = true;
-            btNewStyle.IconRightZoom = 0D;
-            btNewStyle.IconVisible = true;
-            btNewStyle.IconZoom = 40D;
-            btNewStyle.IsTab = true;
-            btNewStyle.Location = new Point(0, 60);
-            btNewStyle.Margin = new Padding(4, 3, 4, 3);
-            btNewStyle.Name = "btNewStyle";
-            btNewStyle.Normalcolor = Color.White;
-            btNewStyle.OnHovercolor = Color.NavajoWhite;
-            btNewStyle.OnHoverTextColor = Color.White;
-            btNewStyle.selected = false;
-            btNewStyle.Size = new Size(218, 30);
-            btNewStyle.TabIndex = 1;
-            btNewStyle.Text = "Manage Style";
-            btNewStyle.TextAlign = ContentAlignment.MiddleLeft;
-            btNewStyle.Textcolor = Color.Gray;
-            btNewStyle.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btNewStyle.Click += btNewStyle_Click;
+            pnDatabase.Controls.Add(btAllStyle);
+            pnDatabase.Controls.Add(btNewStyle);
+            pnDatabase.Controls.Add(btSimStyle);
+            pnDatabase.Controls.Add(btactivity);
+            pnDatabase.Dock = DockStyle.Top;
+            pnDatabase.Location = new Point(0, 40);
+            pnDatabase.Name = "pnDatabase";
+            pnDatabase.Size = new Size(218, 136);
+            pnDatabase.TabIndex = 10;
             // 
             // btAllStyle
             // 
@@ -332,6 +195,155 @@
             btAllStyle.Textcolor = Color.Gray;
             btAllStyle.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btAllStyle.Click += btAllStyle_Click;
+            // 
+            // btNewStyle
+            // 
+            btNewStyle.Active = false;
+            btNewStyle.Activecolor = Color.NavajoWhite;
+            btNewStyle.BackColor = Color.White;
+            btNewStyle.BackgroundImageLayout = ImageLayout.Stretch;
+            btNewStyle.BorderRadius = 0;
+            btNewStyle.ButtonText = "Manage Style";
+            btNewStyle.DisabledColor = Color.Gray;
+            btNewStyle.Dock = DockStyle.Top;
+            btNewStyle.Iconcolor = Color.Transparent;
+            btNewStyle.Iconimage = (Image)resources.GetObject("btNewStyle.Iconimage");
+            btNewStyle.Iconimage_right = null;
+            btNewStyle.Iconimage_right_Selected = null;
+            btNewStyle.Iconimage_Selected = null;
+            btNewStyle.IconMarginLeft = 0;
+            btNewStyle.IconMarginRight = 0;
+            btNewStyle.IconRightVisible = true;
+            btNewStyle.IconRightZoom = 0D;
+            btNewStyle.IconVisible = true;
+            btNewStyle.IconZoom = 40D;
+            btNewStyle.IsTab = true;
+            btNewStyle.Location = new Point(0, 60);
+            btNewStyle.Margin = new Padding(4, 3, 4, 3);
+            btNewStyle.Name = "btNewStyle";
+            btNewStyle.Normalcolor = Color.White;
+            btNewStyle.OnHovercolor = Color.NavajoWhite;
+            btNewStyle.OnHoverTextColor = Color.White;
+            btNewStyle.selected = false;
+            btNewStyle.Size = new Size(218, 30);
+            btNewStyle.TabIndex = 1;
+            btNewStyle.Text = "Manage Style";
+            btNewStyle.TextAlign = ContentAlignment.MiddleLeft;
+            btNewStyle.Textcolor = Color.Gray;
+            btNewStyle.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btNewStyle.Click += btNewStyle_Click;
+            // 
+            // btSimStyle
+            // 
+            btSimStyle.Active = false;
+            btSimStyle.Activecolor = Color.NavajoWhite;
+            btSimStyle.BackColor = Color.White;
+            btSimStyle.BackgroundImageLayout = ImageLayout.Stretch;
+            btSimStyle.BorderRadius = 0;
+            btSimStyle.ButtonText = "Similarity Style";
+            btSimStyle.DisabledColor = Color.Gray;
+            btSimStyle.Dock = DockStyle.Top;
+            btSimStyle.Iconcolor = Color.Transparent;
+            btSimStyle.Iconimage = (Image)resources.GetObject("btSimStyle.Iconimage");
+            btSimStyle.Iconimage_right = null;
+            btSimStyle.Iconimage_right_Selected = null;
+            btSimStyle.Iconimage_Selected = null;
+            btSimStyle.IconMarginLeft = 0;
+            btSimStyle.IconMarginRight = 0;
+            btSimStyle.IconRightVisible = true;
+            btSimStyle.IconRightZoom = 0D;
+            btSimStyle.IconVisible = true;
+            btSimStyle.IconZoom = 40D;
+            btSimStyle.IsTab = true;
+            btSimStyle.Location = new Point(0, 30);
+            btSimStyle.Margin = new Padding(4, 3, 4, 3);
+            btSimStyle.Name = "btSimStyle";
+            btSimStyle.Normalcolor = Color.White;
+            btSimStyle.OnHovercolor = Color.NavajoWhite;
+            btSimStyle.OnHoverTextColor = Color.White;
+            btSimStyle.selected = false;
+            btSimStyle.Size = new Size(218, 30);
+            btSimStyle.TabIndex = 2;
+            btSimStyle.Text = "Similarity Style";
+            btSimStyle.TextAlign = ContentAlignment.MiddleLeft;
+            btSimStyle.Textcolor = Color.Gray;
+            btSimStyle.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btSimStyle.Click += btSimStyle_Click;
+            // 
+            // btactivity
+            // 
+            btactivity.Active = false;
+            btactivity.Activecolor = Color.NavajoWhite;
+            btactivity.BackColor = Color.White;
+            btactivity.BackgroundImageLayout = ImageLayout.Stretch;
+            btactivity.BorderRadius = 0;
+            btactivity.ButtonText = "Activity Log";
+            btactivity.DisabledColor = Color.Gray;
+            btactivity.Dock = DockStyle.Top;
+            btactivity.Iconcolor = Color.Transparent;
+            btactivity.Iconimage = (Image)resources.GetObject("btactivity.Iconimage");
+            btactivity.Iconimage_right = null;
+            btactivity.Iconimage_right_Selected = null;
+            btactivity.Iconimage_Selected = null;
+            btactivity.IconMarginLeft = 0;
+            btactivity.IconMarginRight = 0;
+            btactivity.IconRightVisible = true;
+            btactivity.IconRightZoom = 0D;
+            btactivity.IconVisible = true;
+            btactivity.IconZoom = 40D;
+            btactivity.IsTab = true;
+            btactivity.Location = new Point(0, 0);
+            btactivity.Margin = new Padding(4, 3, 4, 3);
+            btactivity.Name = "btactivity";
+            btactivity.Normalcolor = Color.White;
+            btactivity.OnHovercolor = Color.NavajoWhite;
+            btactivity.OnHoverTextColor = Color.White;
+            btactivity.selected = false;
+            btactivity.Size = new Size(218, 30);
+            btactivity.TabIndex = 3;
+            btactivity.Text = "Activity Log";
+            btactivity.TextAlign = ContentAlignment.MiddleLeft;
+            btactivity.Textcolor = Color.Gray;
+            btactivity.TextFont = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btactivity.Click += btactivity_Click;
+            // 
+            // btDatabase
+            // 
+            btDatabase.Animated = true;
+            btDatabase.BorderRadius = 8;
+            btDatabase.CustomizableEdges = customizableEdges3;
+            btDatabase.DisabledState.BorderColor = Color.DarkGray;
+            btDatabase.DisabledState.CustomBorderColor = Color.DarkGray;
+            btDatabase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btDatabase.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btDatabase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btDatabase.Dock = DockStyle.Top;
+            btDatabase.FillColor = Color.FromArgb(224, 224, 224);
+            btDatabase.FillColor2 = Color.FromArgb(224, 224, 224);
+            btDatabase.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btDatabase.ForeColor = Color.DimGray;
+            btDatabase.Image = (Image)resources.GetObject("btDatabase.Image");
+            btDatabase.ImageAlign = HorizontalAlignment.Left;
+            btDatabase.ImageSize = new Size(25, 25);
+            btDatabase.Location = new Point(0, 0);
+            btDatabase.Name = "btDatabase";
+            btDatabase.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btDatabase.Size = new Size(218, 40);
+            btDatabase.TabIndex = 9;
+            btDatabase.Text = "DATABASE";
+            btDatabase.Click += btDatabase_Click;
+            // 
+            // cbbSimLo
+            // 
+            cbbSimLo.Dock = DockStyle.Bottom;
+            cbbSimLo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbSimLo.FormattingEnabled = true;
+            cbbSimLo.Items.AddRange(new object[] { "STB", "STS", "TKM-S-" });
+            cbbSimLo.Location = new Point(0, 539);
+            cbbSimLo.Name = "cbbSimLo";
+            cbbSimLo.Size = new Size(218, 29);
+            cbbSimLo.TabIndex = 8;
+            cbbSimLo.SelectedIndexChanged += cbbSimLo_SelectedIndexChanged;
             // 
             // panel6
             // 
@@ -449,18 +461,6 @@
             panel22.Size = new Size(1260, 43);
             panel22.TabIndex = 17;
             // 
-            // pnDatabase
-            // 
-            pnDatabase.Controls.Add(btAllStyle);
-            pnDatabase.Controls.Add(btNewStyle);
-            pnDatabase.Controls.Add(btSimStyle);
-            pnDatabase.Controls.Add(btactivity);
-            pnDatabase.Dock = DockStyle.Top;
-            pnDatabase.Location = new Point(0, 40);
-            pnDatabase.Name = "pnDatabase";
-            pnDatabase.Size = new Size(218, 136);
-            pnDatabase.TabIndex = 10;
-            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -485,6 +485,7 @@
             ((System.ComponentModel.ISupportInitialize)btClose).EndInit();
             panel2.ResumeLayout(false);
             panel7.ResumeLayout(false);
+            pnDatabase.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
@@ -494,7 +495,6 @@
             tabform.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             pnGenerator.ResumeLayout(false);
-            pnDatabase.ResumeLayout(false);
             ResumeLayout(false);
         }
 
